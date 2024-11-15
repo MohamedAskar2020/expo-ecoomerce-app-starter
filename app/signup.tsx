@@ -40,6 +40,11 @@ const SignUpScreen = (props: Props) => {
           placeholderTextColor={Colors.gray}
           secureTextEntry={true}
         />
+        <InputField
+          placeholder="Confirm Password"
+          placeholderTextColor={Colors.gray}
+          secureTextEntry={true}
+        />
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Sign Up</Text>
         </TouchableOpacity>
