@@ -32,14 +32,17 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
   return (
     <View onLayout={onTabBarLayout} style={styles.tabBar}>
       <Animated.View
-        style={[animatedStyle,{
-          position: "absolute",
-          backgroundColor: Colors.primary,
-          top: 0,
-          left: 20,
-          height: 2,
-          width: buttonWidth / 2,
-        }]}
+        style={[
+          animatedStyle,
+          {
+            position: "absolute",
+            backgroundColor: Colors.primary,
+            top: 0,
+            left: 20,
+            height: 2,
+            width: buttonWidth / 2,
+          },
+        ]}
       />
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
